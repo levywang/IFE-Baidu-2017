@@ -1,5 +1,5 @@
-- [ ] [Task-01](task01.html)
-- [ ] [Task-02](task02.html)
+- [x] [Task-01](task01.html)
+- [x] [Task-02](task02.html)
 - [x] [Task-03](task03.html)
 - [x] [Task-04](task04.html)
 - [x] [Task-05](task05.html)
