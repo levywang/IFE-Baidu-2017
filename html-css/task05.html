@@ -1,1 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务五：零基础HTML及CSS编码（二</title>
+    <style>
+        /*reset*/
+        body {
+            background-color: #F2F2F0;
+            padding: 0px;
+            margin: 0px;
+            min-width: 750px;
+            font-family: "Microsoft Yahei";
+            font-size: 14px;
+        }
+        p {
+            margin: 0;
+        }
+        /*header*/
+        header {
+            height: 60px;
+            background-color: #555555;
+            overflow: hidden;
+        }
+        header .logo {
+            float: left;
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 20px;
+            font-size: 20px;
+        }
+        header .nav {
+            float: right;
+        }
+        header .nav li {
+            font-size: 12px;
+            float: left;
+            margin: 10px 20px 10px 0px;
+        }
+        header .nav li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        /*footer*/
+        footer {
+            height: 60px;
+            width: 100%;
+            background-color: #555555;
+            float: left;
+        }
+        footer p {
+            text-align: center;
+            font-size: 12px;
+            padding: 20px;
+        }
 
+        /*sidebar*/
+        .sidebar {
+            float: right;
+            padding: 20px;
+            width: 25.5%;
+            margin-right: 5px;
+            min-width: 320px;
+            background-color: white;
+            box-shadow: 2px 2px 1px #5C5C5C;
+        }
+        .sidebar h3 {
+            margin: 0;
+            padding: 10px;
+            border-left: 5px solid #ccc;
+            color: black;
+        }
+
+        .sidebar button {
+            border-radius: 5px;
+            background: #E3E3E3;
+            outline: 0;
+        }
+
+        .sidebar-group label {
+            display: inline-block;
+            margin-right: 0px;
+            width: 32%;
+            text-align: right;
+            line-height: 30px;
+        }
+        .sidebar-group p {
+            color: #999;
+            margin-top:2px;
+            margin-left: 32%;
+            padding: 5px;
+        }
+
+        /*row*/
+        .content {
+            margin: 20px 380px 20px 20px;
+            padding: 20px 30px;
+            min-width: 300px;
+            background:#FFF;
+            box-shadow: 2px 2px 4px #888;
+        }
+        .content p {
+            text-indent: 20px;
+        }
+        .content small:nth-child(3) {
+            color: #666;
+        }
+        .img-content {
+            margin: 20px 380px 20px 20px;
+            padding: 20px 30px;
+            min-width: 300px;
+            background:#FFF;
+            box-shadow: 2px 2px 4px #888;
+            display: block;
+            overflow: hidden;
+        }
+        .img {
+            float: left;
+            height: 120px;
+            width: 120px;
+            border: 1px solid #eeeeee;
+            margin: 10px;
+            display: inline-block;
+            position: relative;
+        }
+        .img img {
+            height: 80px;
+            width: 100px;
+            margin: 10px;
+            margin-top: 0;
+        }
+        .img p {
+            text-align: center;
+            font-size: 10px;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a class="logo" href="#">BaiDu IFE</a>
+    <ul class="nav">
+        <li><a href="#">导航链接一</a></li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li><a href="#">导航链接四</a></li>
+    </ul>
+</header>
+
+</div>
+<div class="row">
+    <div class="sidebar">
+        <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+        <div class="sidebar-content">
+            <div class="sidebar-group">
+                <label for="email">请输入邮箱地址 </label>
+                <input type="text" name="email" id="email" placeholder="这是一个文本框">
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div class="sidebar-group">
+                <label for="pass">请输入密码 </label>
+                <input type="password" id="pass" placeholder="*********">
+            </div>
+            <div class="sidebar-group">
+                <label for="pass">请重复输入密码</label>
+                <input type="password" id="pass" placeholder="*********">
+                <p>密码请为6-16位英文数字</p>
+            </div>
+        </div>
+        <button>确认提交</button>
+    </div>
+    <div class="content">
+        <h2>文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <small>文章作者&nbsp;文章发表时间</small>
+        <p>当你在 web 浏览器中浏览网页时，你看到的最基本的内容是文字。这些文字一般有着一些样式特性，比如不同的文字大小和颜色。在多数情况下，页面还会展示图片或者还可能带有视频；有时候会有一个表单，你可以填写信息（或者搜索内容）；或者可以依据喜好自定义页面的展示效果；页面也经常会带有包含动画效果的内容；页面上有些内容会不断变化而有些内容会保持不变。</p>
+        <p>一些技术（如CSS，JavaScript，Flash，AJAX，JSON）可以用来定义网页中的一些元素。但是，网页的基础是由HTML（HyperText Markup Language 超文本标记语言）来定义的。没有了HTML，网页不可能存在。HTML是一个把所有东西包含起来的外壳：HTML是一个国际化的标准，由万维网联盟（W3C）和网页超文本技术工作小组 (WHATWG)维护。WHATWG认为HTML是一个“活着的标准”，它应该不断地在进化。而W3C则致力于维护HTML的“多个版本快照”，即当前最新的版本HTML5和HTML的进化版HTML 5.1。</p>
+        <p>既可以使用较为松散的HTML语法，也可以使用更为严格的XML（Extensible Markup Language 扩展标记语言）语法，同时也解决了Web应用的需求。HTML没有描述内容的样式和格式，只是内容本身和其意义。如果你想要在网站中加入样式和格式，需要通过层叠样式表（CSS）来定义和控制。
+            <br>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="这是一张图片" style="height: 200px; width: 300px">
+        <p>这篇文章提供了一个HTML的入门简介。如果你想要了解浏览器背后的工作原理，这篇文章是一个很好的开始。
+        </p>
+    </div>
+    <div class="content">
+        <h2>另一篇文章一级标题</h2>
+        <h3>什么是 HTML?</h3>
+        <small>文章作者&nbsp;文章发表时间</small>
+        <p>HTML 是一种标记语言（markup language）。它告诉浏览器如何显示内容。HTML把内容（文字，图片，语言，影片等等）和「presentation」（这个内容是如何显示，比如文字用什么颜色显示等等）分开。HTML使用预先定义的元素集合来识别内容形态。 元素包含一个以上的标记来包含或者表达内容。标记利用尖括号表示，而结束标记（用来指示内容尾端）则在前面加上斜线。</p>
+        <p>HTML由不同元素的集合组成。元素定义了它们所包含内容的语义。元素包含了两个相匹配的元素标签（tag）之中所有的内容，当然也包含了标签本身。例如，"&lt;p&gt;"标签表示一个段落的开始；"&lt;img&gt;"标签表示一张图片。访问HTML 元素参考页面以查阅完整的列表。</p>
+        <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="这是一张图片" style="height: 200px; width: 300px">
+        <br>
+        <dl>
+            <dd>列表项目一</dd>
+            <dd>列表项目二</dd>
+            <dd>列表项目三</dd>
+        </dl>
+    </div>
+    <div class="img-content">
+        <h2>图片</h2>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+        <div class="img">
+            <p>好看的图片</p>
+            <img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/%E8%AF%BE%E7%A8%8B%E9%85%8D%E5%9B%BE.3fb31f3e5af7e8d7.jpg" alt="好看的图片">
+        </div>
+    </div>
+    <div class="content">
+        <h2>最后一篇文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <small>文章作者&nbsp;文章发表时间</small>
+        <ol>
+            <li>排名一</li>
+            <li>排名二</li>
+            <li>排名三</li>
+        </ol>
+        <p>下面是一个表格，我这里给表格加了一个border="1"好让你看出来是一个表格，你们不用写html的时候不需要添加</p>
+    </div>
+</div>
+
+<footer>
+    <p>版权所有&copy;</p>
+</footer>
+</body>
+</html>
