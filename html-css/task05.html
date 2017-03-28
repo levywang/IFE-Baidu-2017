@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>任务五：零基础HTML及CSS编码（二</title>
     <style>
-        /*reset*/
         body {
             background-color: #F2F2F0;
             padding: 0px;
@@ -137,6 +136,25 @@
             font-size: 10px;
             margin: 8px;
         }
+        tr {
+            border: 1px solid #cccccc;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            font-size: small;
+        }
+        tr:nth-child(1) {
+            background-color: #444444;
+        }
+        tr:nth-child(1) th {
+            width: 330px;
+        }
+        tr:nth-child(6)  {
+            background-color: #cccccc;
+        }
+        tr:nth-child(6) th {
+            width: 500px;
+        }
     </style>
 </head>
 <body>
@@ -251,6 +269,39 @@
             <li>排名三</li>
         </ol>
         <p>下面是一个表格，我这里给表格加了一个border="1"好让你看出来是一个表格，你们不用写html的时候不需要添加</p>
+        <table border="1px">
+            <tbody>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <th>表内单元格</th>
+                <th>表内单元格</th>
+                <th><a href="#">操作</a></th>
+            </tr>
+            <tr>
+                <th>表内单元格</th>
+                <th>表内单元格</th>
+                <th><a href="#">操作</a></th>
+            </tr>
+            <tr>
+                <th>表内单元格</th>
+                <th>表内单元格</th>
+                <th><a href="#">操作</a></th>
+            </tr>
+            <tr>
+                <th>表内单元格</th>
+                <th>表内单元格</th>
+                <th><a href="#">操作</a></th>
+            </tr>
+            <tr>
+                <th>总计</th>
+                <th colspan="2">1000</th>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
